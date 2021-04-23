@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Data Analyst">
+        <meta name="keywords" content="data analyst, jaroslav kotrba">
+        <meta name="author" content="Jaroslav Kotrba">
+        <title>About</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+        <script src="https://kit.fontawesome.com/37d6defe21.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id = "branding">
+                    <h1><span class="highlight">DATA</span> ANALYST</h1> 
+                    <h2>Jaroslav Kotrba</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <div class="nav-link-wrapper"><a href="index.html">HOME</a></div>
+                        <div class="nav-link-wrapper"><a href="about.html">ABOUT</a></div>
+                        <div class="nav-link-wrapper"><a href="R.html">R</a></div>
+                        <div class="nav-link-wrapper"><a href="Python.html">PYTHON</a></div>
+                        <div class="nav-link-wrapper"><a href="Tableau.html">TABLEAU</a></div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="showcase">
+        </section>
+
+        <section id="paragraf">
+            <div class="content-wrapper">
+                <h1>About Me</h1>
+                        
+                <p>My name is Jaroslav Kotrba and I am a very energetic person with an analytical mindset and excellent language skills that are shaped and mastered through many international activities. Besides, I am very passionate about working with data and its visualization or transformation in an understandable manner. In the year 2020, I wrote and defended my diploma thesis: "The Systemic Risk at the Mortgage Market", which allowed me to unfold my skills in the data science area.</p>
+                <p>My passion for numbers, modeling, and predictions led me to courses linked to econometrics and statistics taught at the Faculty of Economics, where I got acquainted with data analytics. Then followed courses related to the statistics in computer science at the Faculty of Informatics that were not compulsory. However, I wanted to get a better insight and acquire more knowledge in practical data science from real IT experts.</p>
+                <p>The first working experience was obtained at the Czech Embassy in Vienna. My tasks were to compile statistics related to the Austrian economy and write summarisations on them accompanied by graphic elements predominantly sent to the headquarters in Prague. Writing about Prague gives me the opportunity to mention the membership in the Economics Commission for National Economy, where I discuss and elaborate possible changes, steps, and recommendations for the government to stabilize and improve the Czech Republic's economic situation. Nowadays, I devote my time to work with software R where I love to solve new problems and challenges. As I do like R very much, I am very keen on dealing with SQL, Python, Excel, or Tableau. I am currently working by Honeywell as Data Analyst.</p>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>CONTACT via:</p>
+            <div class="contact-link-wrapper"><a href="mailto: jaroslav.kotrba@gmail.com"><i class="fas fa-envelope"></i> jaroslav.kotrba@gmail.com</a></div>
+            <div class="contact-link-wrapper"><a href="tel:00420-604-724-303"><i class="fas fa-phone"></i> +420 604 724 303</a></div>
+            
+            <div class="wrapper">
+                <div class="button_2">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/jaroslav-kotrba-729b97172/"><i class="fab fa-linkedin"></i></a>
+                        <span>Linkedin</span>
+                    </div>
+                </div>
+            </div>
+
+            <p>Copyright &copy; 2021</p>
+        </footer>
+    
+        <div class="cookie-container">
+            <p>
+                I use cookies on my website to give you the best experience and show the most relevant information.
+                To find out more, read <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+            </p>
+    
+            <button class="cookie-btn">
+                Okay
+            </button>
+        </div>
+
+    </body>
+
+    <script>
+        const cookieContainer = document.querySelector(".cookie-container")
+        const cookieButton = document.querySelector(".cookie-btn");
+    
+        cookieButton.addEventListener("click", () => {
+            cookieContainer.classList.remove("active");
+            localStorage.setItem("cookieBannerDisplayed", "true")
+        });
+    
+        setTimeout(() => {
+            if(!localStorage.getItem("cookieBannerDisplayed"))
+            cookieContainer.classList.add("active");
+        }, 1000);
+    </script>
+    
+</html>

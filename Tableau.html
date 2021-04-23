@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Data Analyst">
+        <meta name="keywords" content="data analysis, risk analysis, forecasting, optimization">
+        <meta name="author" content="Jaroslav Kotrba">
+        <title>Tableau</title>
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+        <script src="https://kit.fontawesome.com/37d6defe21.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style5.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id = "branding">
+                    <h1><span class="highlight">DATA</span> ANALYST</h1>
+                    <h2>Jaroslav Kotrba</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <div class="nav-link-wrapper"><a href="index.html">HOME</a></div>
+                        <div class="nav-link-wrapper"><a href="about.html">ABOUT</a></div>
+                        <div class="nav-link-wrapper"><a href="R.html">R</a></div>
+                        <div class="nav-link-wrapper"><a href="Python.html">PYTHON</a></div>
+                        <div class="nav-link-wrapper"><a href="Tableau.html">TABLEAU</a></div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="showcase">
+        </section>
+
+        <section id="paragraf">
+            <div class="content-wrapper">
+                <h1>Software Tableau</h1>
+                
+                <div class="Tableau-link-wrapper">
+
+                    <P>TABLEAU all projects</P>
+                    <div class="nav-link-wrapper-two">
+                        <a href="https://public.tableau.com/profile/jaroslav.kotrba#!/" target="_blank">TABLEAU.projects</a>
+                    </div>
+                    
+                    <P>CHOOSEN PROJECTS (pc screen resolution needed):</P>
+
+                    <P>Google Analytics - Marketing of DiePresse</P>
+                    <div class="nav-link-wrapper-two">
+                        <a href="https://public.tableau.com/profile/jaroslav.kotrba#!/vizhome/DiePresse/DiePresse">GOOGLE_ANALYTICS.project</a>
+                    </div>
+
+                    <P>Customer Segmentation of a Small Firm in the UK</P>
+                    <div class="nav-link-wrapper-two">
+                        <a href="https://public.tableau.com/profile/jaroslav.kotrba#!/vizhome/Continue_15912062530890/Customers">SEGMENTATION.project</a>
+                    </div>
+
+                    <P>Cars Sales Analysis Worldwide</P>
+                    <div class="nav-link-wrapper-two">
+                        <a href="https://public.tableau.com/profile/jaroslav.kotrba#!/vizhome/Global_Vehicles_Sales/GlobalVehiclesSales">SALES.project</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>CONTACT via:</p>
+            <div class="contact-link-wrapper"><a href="mailto: jaroslav.kotrba@gmail.com"><i class="fas fa-envelope"></i> jaroslav.kotrba@gmail.com</a></div>
+            <div class="contact-link-wrapper"><a href="tel:00420-604-724-303"><i class="fas fa-phone"></i> +420 604 724 303</a></div>
+            
+            <div class="wrapper">
+                <div class="button_2">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/jaroslav-kotrba-729b97172/"><i class="fab fa-linkedin"></i></a>
+                        <span>Linkedin</span>
+                    </div>
+                </div>
+            </div>
+
+            <p>Copyright &copy; 2021</p>
+        </footer>
+    
+        <div class="cookie-container">
+            <p>
+                I use cookies on my website to give you the best experience and show the most relevant information.
+                To find out more, read <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+            </p>
+    
+            <button class="cookie-btn">
+                Okay
+            </button>
+        </div>
+
+    </body>
+
+    <script>
+        const cookieContainer = document.querySelector(".cookie-container")
+        const cookieButton = document.querySelector(".cookie-btn");
+    
+        cookieButton.addEventListener("click", () => {
+            cookieContainer.classList.remove("active");
+            localStorage.setItem("cookieBannerDisplayed", "true")
+        });
+    
+        setTimeout(() => {
+            if(!localStorage.getItem("cookieBannerDisplayed"))
+            cookieContainer.classList.add("active");
+        }, 1000);
+    </script>
+    
+</html>

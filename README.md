@@ -1,3 +1,3 @@
 # MyWeb
 
-TO SEE THE OUTPUT: https://jaroslavkotrba.com/
+TO SEE THE OUTPUT: https://jaroslavkotrba.com

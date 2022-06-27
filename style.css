@@ -115,7 +115,7 @@ p {
 
 #header .nav-list ul a {
 	font-size: 2.5rem;
-	font-weight: 500;
+	font-weight: 900;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: white;
@@ -138,7 +138,7 @@ p {
 }
 
 #header .nav-list ul li:hover a::after {
-	transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(0); /* set 1 for displaying text in background */
 	letter-spacing: initial;
 }
 
@@ -219,14 +219,13 @@ p {
 }
 /* End Header section */
 
-
 /* Hero Section */
 #hero{
     background-image: url(./images/programmer.jpg);
     background-size: cover;
     background-position: 0 0px;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* was -1 for cookies */
 }
 
 #hero::after{
@@ -347,7 +346,7 @@ p {
     background-size: cover;
     margin: 10px 5%;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* was -1 for cookies */
     overflow: hidden;
 }
 
@@ -617,7 +616,43 @@ p {
     color: black;
     text-align: center;
 }
-/*End Contact Section */
+
+/* CSS Snippet from W3schools: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+/* Style inputs with type="text", select elements and textareas */
+input[type=message], input[type=email], input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid gray; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  button[type=submit] {
+    float: right;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 5px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  button[type=submit]:hover {
+    background-color: crimson;
+    color: white;
+  }
+/* End Contact Section */
 
 /* Footer Section */
 #footer {
@@ -658,6 +693,46 @@ p {
 	font-size: 1.3rem;
 }
 /* End Footer Section */
+
+/* Cookies */
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #2f3640;
+    color: #f5f6fa;
+    padding: 0 32px;
+    box-shadow: 0 -2px 16px rgb(47, 54, 64);
+    opacity: 0.8;
+    transition: 400ms;
+    z-index: 1;
+}
+
+.cookie-container p {
+    margin: 24px 0;
+    color: #f5f6fa;
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container a {
+    color: crimson
+}
+
+.cookie-btn {
+    background: crimson;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    cursor: pointer;    
+}
+/* End Cookies */
 
 /* Keyframes */
 @keyframes hamburger_puls {

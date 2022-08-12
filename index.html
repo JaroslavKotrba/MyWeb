@@ -306,12 +306,28 @@
               </div>
         </div>
 
+        <!-- Check for hackers https://dev.to/huzaifa99/add-google-recaptcha-v2-to-plain-html-3n0p -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        <script>
+            function enableBtn(){
+                document.getElementById("submit_details").disabled = false;
+            }
+        </script>
+
         <form action="https://formsubmit.co/jaroslav.kotrba@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
             <textarea name="message" placeholder="Your message here" required></textarea>
-            <button type="submit">SEND</button>
+            <button type="submit" id="submit_details" disabled>SEND</button>
+
+            <div class="g-recaptcha" 
+            data-sitekey="6Lca92whAAAAAJsz7RwCVOu_KEaZc9y3vx0Fou-S"
+            data-callback="enableBtn"
+            data-expired-callback="onRecaptchaResponseExpiry"
+            data-error-callback="onRecaptchaError"></div>
+            
         </form>
 
      </div>

@@ -643,6 +643,7 @@ input[type=message], input[type=email], input[type=text], textarea {
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 5px;
+    margin-bottom: 10px;
     transition: .3s ease;
     transition-property: background-color, color;
   }
